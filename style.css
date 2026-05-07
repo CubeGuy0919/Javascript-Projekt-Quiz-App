@@ -1,6 +1,6 @@
 /* 1. Global Setup */
 body {
-    background: radial-gradient(circle, #1a1a2e 0%, #0f0f1a 100%); /* Slight gradient for depth */
+    background: radial-gradient(circle, #1a1a2e 0%, #0f0f1a 100%); 
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -11,20 +11,20 @@ body {
     padding: 20px;
 }
 
-/* 2. The Main Quiz Card (Merged Glassmorphism + Structure) */
+/* 2. The Main Quiz Card */
 .quiz-container {
-    background: rgba(22, 33, 62, 0.8); /* Old color but semi-transparent */
-    backdrop-filter: blur(15px); /* New glass effect */
+    background: rgba(22, 33, 62, 0.8); 
+    backdrop-filter: blur(15px); 
     padding: 2rem;
-    border-radius: 20px; /* Slightly rounder */
-    border: 1px solid rgba(233, 69, 96, 0.3); /* Accent border */
+    border-radius: 20px; 
+    border: 1px solid rgba(233, 69, 96, 0.3); 
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-    width: 450px; /* Widened slightly for better UI */
+    width: 450px; 
     text-align: center;
     margin-top: 50px;
 }
 
-/* 3. Progress Bar */
+/* Progress Bar */
 .progress-container {
     width: 100%;
     height: 10px;
@@ -42,7 +42,7 @@ body {
     transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
 }
 
-/* 4. The Grid & Buttons */
+/* The Grid & Buttons */
 .btn-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,7 +73,7 @@ body {
     transform: translateY(0);
 }
 
-/* 5. Feedback Animations (Correct/Wrong) */
+/* Feedback Animations (Correct/Wrong) */
 .correct-flash {
     background-color: #4dfd63 !important;
     border-color: #4dfd63 !important;
@@ -93,11 +93,22 @@ body {
     75% { transform: translateX(5px); }
 }
 
-/* 6. Utility */
+/* Utility */
 .hidden { display: none; }
 
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.category-card {
+    text-decoration: none; 
+    color: inherit;       
+    display: block;      
+}
+
+/* ALIGN TO LEFT I GUESS */
+.category-grid{
+   
 }

@@ -3,32 +3,33 @@
 <head>
     <title>Ultimate Quiz Galaxy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="questions.js" defer></script>
+    <script src="quizDatas.js" defer></script>
+    <script src="quizEngine.js" defer></script>
 </head>
 <body>
     <div class="quiz-container">
-        <h1 id="category-title">Marvel Quiz</h1>
+        <h1 id="category-title">Loading...</h1>
         
         <div class="progress-container">
-          <div id="progress-bar"></div>
+            <div id="progress-bar"></div>
         </div>
 
         <div id="game-area">
             <p id="question-text">Question goes here...</p>
-            <div id="answer-buttons" class="btn-grid">
-                </div>
+            <div id="answer-buttons" class="btn-grid"></div>
         </div>
 
         <div id="results-area" class="hidden">
             <h2>Quiz Finished!</h2>
-            <p>Your Score: <span id="final-score">0</span></p>
-            <button onclick="location.reload()">Play Again</button>
+            <p>Score: <span id="final-score">0</span></p>
+            <button class="btn" onclick="location.reload()">Retry</button>
+            <button class="btn" onclick="window.close()">Close Game</button>
         </div>
-    </div>
 
-    <div class="leaderboard">
-        <h3>Top Players</h3>
-        <ul id="score-list"></ul>
+        <div class="leaderboard">
+            <h3>Top Players</h3>
+            <ul id="score-list"></ul>
+        </div>
     </div>
 </body>
 </html>
