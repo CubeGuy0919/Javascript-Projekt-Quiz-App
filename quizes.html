@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Ultimate Quiz Galaxy</title>
     <link rel="stylesheet" href="style.css">
     <script src="quizDatas.js" defer></script>
     <script src="quizEngine.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <div class="category-grid">
-        <a href="chosenQuiz.html?category=Marvel" target="_blank" class="category-card">
-            <div class="icon"><h3>🛡️ Marvel</h3></div>
-        </a>
+    <header class="quiz-header">
+        <h1 class="logo-text">
+            ULTIMATE <span class="accent">QUIZ</span> GALAXY
+        </h1>
+    </header>
 
-        <a href="chosenQuiz.html?category=DC" target="_blank" class="category-card">
-            <div class="icon"><h3>🦇 DC</h3></div>
-        </a>
+    <div id="container">
 
-        <a href="chosenQuiz.html?category=Science" target="_blank" class="category-card">
-            <div class="icon"><h3>🧪Science</h3></div>
-        </a>
+        <div class="quiz-categories-title">
+            <h2>QUIZ CATEGORIES</h2>
+        </div>
 
-        <a href="chosenQuiz.html?category=Geography" target="_blank" class="category-card">
-            <div class="icon"><h3>🌍 Geography</h3></div>
-        </a>
+        <div class="categories row">
 
-        <a href="chosenQuiz.html?category=The%20Year%20That%20Was" target="_blank" class="category-card">
-            <div class="icon"><h3>📅 The Year That Was</h3></div>
-        </a>
+            <div class="category-grid col-sm-4">
+                <h2>MOVIES</h2>
 
-        <a href="chosenQuiz.html?category=Guinness%20Records" target="_blank" class="category-card">
-            <div class="icon"><h3>🏆 Guinness Records</h3></div>
-        </a>
+                <ul>
+                    <li>
+                        <a href="chosenQuiz.html?category=Marvel" target="_blank" class="category-card">
+                            <div class="icon">
+                                <h3><img src="Logos/Marvel Logo.png" class="category-logo-img" alt="Marvel Logo"
+                                        title="Marvel Logo">Marvel</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chosenQuiz.html?category=DC" target="_blank" class="category-card">
+                            <div class="icon">
+                                <h3><img src="Logos/DC Logo.png" class="category-logo-img" alt="Marvel Logo"
+                                        title="Marvel Logo">DC</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-grid col-sm-4">
+                <h2>GENERAL</h2>
+                <a href="chosenQuiz.html?category=Science" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>🧪 Science</h3>
+                    </div>
+                </a>
+
+                <a href="chosenQuiz.html?category=Geography" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>🌍 Geography</h3>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="category-grid col-sm-4">
+                <h2>FUN FACTS</h2>
+                <a href="chosenQuiz.html?category=The%20Year%20That%20Was" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>📅 The Year That Was</h3>
+                    </div>
+                </a>
+
+                <a href="chosenQuiz.html?category=Guinness%20Records" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>🏆 Guinness Records</h3>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="category-grid col-sm-4">
+                <h2>FUN FACTS</h2>
+                <a href="chosenQuiz.html?category=The%20Year%20That%20Was" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>📅 The Year That Was</h3>
+                    </div>
+                </a>
+
+                <a href="chosenQuiz.html?category=Guinness%20Records" target="_blank" class="category-card">
+                    <div class="icon">
+                        <h3>🏆 Guinness Records</h3>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+
     </div>
 
 </body>
+
 </html>
