@@ -70,7 +70,7 @@ body {
 
 /* Feedback Animations */
 
-/* Correct */
+/* Correct Answer */
 .correct-flash {
     background-color: #4dfd63 !important;
     border-color: #4dfd63 !important;
@@ -78,7 +78,7 @@ body {
     box-shadow: 0 0 20px #4dfd63;
 }
 
-/* Wrong */
+/* Wrong Answer */
 .wrong-flash {
     background-color: #ff4d4d !important;
     border-color: #ff4d4d !important;
@@ -122,7 +122,6 @@ h1 {
     width: 60%;
     padding: 20px;
     box-shadow: 2px 2px 4px rgba(110, 89, 158, 0.5);
-    ;
 }
 
 #container h2 {
@@ -143,17 +142,66 @@ h1 {
 .category-grid {
     background-color: rgba(233, 69, 96, 0.4);
     border: 1px solid rgba(204, 46, 72, 0.4);
-    border-radius: 10%;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 25px 15px 15px 15px;
+    width: 100%;
+    height: 100%;
+    min-height: 30vh;
+    transition: transform 0.3s ease;
 }
 
 .categories {
-    margin: 15px;
     color: white;
     font-size: 1.2rem !important;
     text-align: center;
     /* align-items: center;
     justify-content: center; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TOPICS TITLES */
+.foe-square {
+    background-color: #e94560;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    margin-bottom: -10px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* HOVER EFFECTS*/
+.category-wrapper:hover .category-grid {
+    transform: translateY(-5px);
+    background-color: rgba(233, 69, 96, 0.6);
+}
+
+.category-card:hover h3, img {
+    /* TRANSITION 1.) */
+    /* font-size: 1.4rem; 
+    transition: font-size 0.3s ease;  */
+
+    /* TRANSITION 2.) */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    display: inline-block;
+
+    color: #ff4d8d; 
+    cursor: alias;
 }
 
 /* QUIZ HEADER */
@@ -238,14 +286,4 @@ h1 {
 .category-logo-img {
     width: 30px;
     height: 30px;
-}
-
-/* CATEGORIES LIST ELEMENTS */
-ul {
-    /* list-style-type: none; */
-    /* list-style-image: url(Logos/Marvel\ Logo.png); */
-}
-
-li {
-   
 }
