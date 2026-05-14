@@ -60,6 +60,16 @@
     transform: translateY(0);
 }
 
+#results-area {
+    position: relative;
+    z-index: 20; 
+}
+
+#results-area .answerButton {
+    pointer-events: auto !important; /* Force re-enabling of clicks */
+    cursor: pointer;
+}
+
 /* Feedback Animations */
 
 /* Correct Answer */

@@ -44,8 +44,7 @@ function showQuestion() {
 }
 
 function checkAnswer(btn, choice, correct) {
-    // Disable all buttons so user can't click twice
-    const buttons = document.querySelectorAll('.answerButton');
+    const buttons = document.querySelectorAll('.answerButton-grid .answerButton');
     buttons.forEach(b => b.style.pointerEvents = 'none');
 
     if (choice === correct) {
