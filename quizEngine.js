@@ -16,7 +16,6 @@ window.onload = () => {
         startTime = Date.now();
         showQuestion();
     }
-    displayLeaderboard();
 };
 
 // GAMEPLAY LOGIC
@@ -67,23 +66,14 @@ function checkAnswer(btn, choice, correct) {
 }
 
 function endQuiz() {
-    clearInterval(timerInterval);
-    const timeTaken = ((Date.now() - startTime) / 1000).toFixed(1);
+    clearInterval(timerInterval); // STOP THE TIMER
     
+    const time = ((Date.now() - startTime) / 1000).toFixed(1);
     document.getElementById('game-area').classList.add('hidden');
     document.getElementById('results-area').classList.remove('hidden');
-    document.getElementById('final-score').innerText = `${score} pts (${timeTaken}s)`;
-
-    document.getElementById('save-btn').onclick = () => {
-        const playerName = document.getElementById('player-name').value.trim() || "Anonymous";
-        saveScore(score, playerName); 
-        
-        document.getElementById('name-input-container').style.display = 'none';
-    };
+    document.getElementById('final-score').innerText = `${score} pts (${time}s)`;
 }
 
-
-/* TIMER SYSTEM */
 let timeLeft = 60; 
 let timerInterval;
 
@@ -117,51 +107,17 @@ function updateTimerDisplay() {
     }
 }
 
-// UPDATE : question-counter
+
+// UUPDATE : question-counter
 function updateStatus(currentIndex, totalQuestions) {
     const counter = document.getElementById('question-counter');
     counter.innerText = `${currentIndex + 1} / ${totalQuestions}`;
 }
 
-// UPDATE : live-score
-function saveScore(finalScore, name) {
-    const params = new URLSearchParams(window.location.search);
-    const category = params.get('category') || "General";
-    const timeTaken = ((Date.now() - startTime) / 1000).toFixed(1);
-
-    let allLeaderboards = JSON.parse(localStorage.getItem('galaxyLeaderboards')) || {};
-    if (!allLeaderboards[category]) allLeaderboards[category] = [];
-
-    const newEntry = {
-        name: name, // SAVE THE NAME
-        score: finalScore,
-        time: timeTaken,
-        date: new Date().toLocaleDateString()
-    };
-
-    allLeaderboards[category].push(newEntry);
-    allLeaderboards[category].sort((a, b) => (b.score !== a.score) ? b.score - a.score : a.time - b.time);
-    allLeaderboards[category] = allLeaderboards[category].slice(0, 5);
-
-    localStorage.setItem('galaxyLeaderboards', JSON.stringify(allLeaderboards));
-    displayLeaderboard();
-}
-
-// Update displayLeaderboard to show the name
-function displayLeaderboard() {
-    const params = new URLSearchParams(window.location.search);
-    const category = params.get('category') || "General";
-    const listElement = document.getElementById('score-list');
-    const allLeaderboards = JSON.parse(localStorage.getItem('galaxyLeaderboards')) || {};
-    const categoryScores = allLeaderboards[category] || [];
-
-    listElement.innerHTML = categoryScores.map((entry, index) => `
-        <li>
-            <span class="rank">#${index + 1}</span>
-            <span class="name">${entry.name}</span> <span class="pts">${entry.score} pts</span>
-            <span class="time">${entry.time}s</span>
-        </li>
-    `).join('');
+// UUPDATE : live-score
+function updateLiveScore(currentScore) {
+    const scoreElement = document.getElementById('live-score');
+    scoreElement.innerText = currentScore;
 }
 
 // startQuiz('Marvel');
