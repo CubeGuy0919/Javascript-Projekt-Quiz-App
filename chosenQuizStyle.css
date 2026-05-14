@@ -1,0 +1,93 @@
+/* The Main Quiz Card */
+.quiz-container {
+    background: rgba(22, 33, 62, 0.8);
+    backdrop-filter: blur(15px);
+    padding: 1.5rem; 
+    border-radius: 20px;
+    width: 90%; 
+    max-width: 550px; 
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #0f3460;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #e94560, #ff4d4d);
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+}
+
+/* The Grid & Buttons */
+.answerButton-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.answerButton {
+    background-color: #0f3460;
+    color: white;
+    border: 2px solid #e94560;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.answerButton:hover {
+    background-color: #e94560;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.answerButton:active {
+    transform: translateY(0);
+}
+
+/* Feedback Animations */
+
+/* Correct Answer */
+.correct-flash {
+    background-color: #4dfd63 !important;
+    border-color: #4dfd63 !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px #4dfd63;
+}
+
+/* Wrong Answer */
+.wrong-flash {
+    background-color: #ff4d4d !important;
+    border-color: #ff4d4d !important;
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}

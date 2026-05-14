@@ -32,7 +32,7 @@ function showQuestion() {
     actualQ.a.forEach(choice => {
         const btn = document.createElement('button');
         btn.innerText = choice;
-        btn.className = 'btn';
+        btn.className = 'answerButton';
         btn.onclick = () => checkAnswer(btn, choice, actualQ.correct);
         btnContainer.appendChild(btn);
     });
@@ -40,7 +40,7 @@ function showQuestion() {
 
 function checkAnswer(btn, choice, correct) {
     if (choice === correct) {
-        score += 100;
+        score += 1;
         btn.classList.add('correct-flash');
     } else {
         btn.classList.add('wrong-flash');

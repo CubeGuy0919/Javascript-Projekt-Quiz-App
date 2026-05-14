@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Quiz Galaxy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chosenQuizStyle.css">
+    <link rel="stylesheet" href="quizeesStyle.css">
     <script src="quizDatas.js" defer></script>
     <script src="quizEngine.js" defer></script>
 </head>
+
 <body>
-    <div class="quiz-container">
-        <h1 id="category-title">Loading...</h1>
-        
-        <div class="progress-container">
-            <div id="progress-bar"></div>
-        </div>
+    <div id="container">
 
-        <div id="game-area">
-            <p id="question-text">Question goes here...</p>
-            <div id="answer-buttons" class="btn-grid"></div>
-        </div>
+        <header class="quiz-header">
+            <h1 class="logo-text">
+                ULTIMATE <span class="accent">QUIZ</span> GALAXY
+            </h1>
+        </header>
 
-        <div id="results-area" class="hidden">
-            <h2>Quiz Finished!</h2>
-            <p>Score: <span id="final-score">0</span></p>
-            <button class="btn" onclick="location.reload()">Retry</button>
-            <button class="btn" onclick="window.close()">Close Game</button>
-        </div>
+        <div class="quiz-container">
+            <h1 id="category-title">Loading...</h1>
 
-        <div class="leaderboard">
-            <h3>Top Players</h3>
-            <ul id="score-list"></ul>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div id="game-area">
+                <p id="question-text">Question goes here...</p>
+                <div id="answer-buttons" class="answerButton-grid"></div>
+            </div>
+
+            <div id="score-pointer">
+                <p id="score-text">Score points goes here...</p>
+            </div>
+
+            <div id="results-area" class="hidden">
+                <h2>Quiz Finished!</h2>
+                <p>Score: <span id="final-score">0</span></p>
+                <button class="answerButton" onclick="location.reload()">Retry</button>
+                <button class="answerButton" onclick="window.close()">Close Game</button>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Top Players</h3>
+                <ul id="score-list"></ul>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

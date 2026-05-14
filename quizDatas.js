@@ -1,6 +1,6 @@
 const quizData = {
     "Marvel": [
-        { q: "What is the name of Thor's hammer?", a: ["Mjolnir", "Stormbreaker", "Gungnir", "Jarnbjorn"], correct: "Mjolnir" },
+        { q: "What is the name of Thor's hammer?", a: ["Mjolnir", "Stormbreaker", "Jane Foster", "Jonathan?"], correct: "Mjolnir" },
         { q: "What is Wanda Maximoff's superhero name?", a: ["Scarlet Witch", "Black Widow", "Captain Marvel", "Echo"], correct: "Scarlet Witch" },
         { q: "What is Captain America's shield made of?", a: ["Adamantium", "Vibranium", "Uru", "Titanium"], correct: "Vibranium" },
         { q: "Who is the God of Mischief?", a: ["Thor", "Loki", "Odin", "Hela"], correct: "Loki" },
