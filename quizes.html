@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Quiz Galaxy</title>
     <link rel="stylesheet" href="quizeesStyle.css">
-    <script src="quizDatas.js" defer></script>
-    <script src="quizEngine.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="quizDatas.js" defer></script>
+    <script src="quizEngine.js" defer></script>
+    <script src="updateGlobalLeaderboards.js" defer></script>
 </head>
 
 <body>
@@ -131,57 +132,66 @@
                     </div>
                 </div>
             </div>
----------
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="category-wrapper">
-                    <div class="foe-square">LEGENDS</div>
-                    <div class="category-grid">
-                        <h2>Music</h2>
-                        <a href="chosenQuiz.html?category=Guinness%20Records" target="_blank" class="category-card">
-                            <div class="icon">
-                                <h3><span>🎤</span> Singer </h3>
-                            </div>
-                        </a>
-                        <a href="chosenQuiz.html?category=World%20Records" target="_blank" class="category-card">
-                            <div class="icon">
-                                <h3><span>🏙🎶</span> Musical instrument</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
 
-        <footer class="quiz-footer">
-            <footer class="quiz-footer container-fluid mt-5">
-                <div class="row py-4 px-4 justify-content-between align-items-center">
-                    <div class="col-md-4 mb-3">
-                        <h4 class="logo-text footer-logo">ULTIMATE <span class="accentFooter">QUIZ</span> GALAXY</h4>
-                        <p class="text-muted small">Explore the universe of knowledge, one question at a time.</p>
-                    </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="category-wrapper">
+                <div class="foe-square">MUSIC</div>
+                <div class="category-grid">
+                    <h2>Music</h2>
+                    <a href="chosenQuiz.html?category=Guinness%20Records" target="_blank" class="category-card">
+                        <div class="icon">
+                            <h3><span>🎤</span> Singers</h3>
+                        </div>
+                    </a>
+                    <a href="chosenQuiz.html?category=World%20Records" target="_blank" class="category-card">
+                        <div class="icon">
+                            <h3><span>🏙🎶</span> Musical instrument</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                    <div class="col-md-4 mb-3 text-md-center">
-                        <div class="contact-item">
-                            <span>📧</span> support@quizgalaxy.com
-                        </div>
-                        <div class="contact-item">
-                            <span>📞</span> +36 70 296 68 33
-                        </div>
-                    </div>
+    </div>
 
-                    <div class="col-md-4 mb-3 text-md-end">
-                        <div class="social-links mb-3">
-                            <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                        <p class="mb-0 text-muted small">&copy; 2026 Quiz Galaxy Inc. All rights reserved.</p>
+    <div class="container my-5">
+        <div class="global-leaderboard-wrapper">
+            <h2 class="leaderboard-title"><i class="fas fa-trophy"></i> HALL OF FAME</h2>
+            <div id="global-leaderboard-container" class="row">
+            </div>
+        </div>
+    </div>
+
+    <footer class="quiz-footer">
+        <footer class="quiz-footer container-fluid mt-5">
+            <div class="row py-4 px-4 justify-content-between align-items-center">
+                <div class="col-md-4 mb-3">
+                    <h4 class="logo-text footer-logo">ULTIMATE <span class="accentFooter">QUIZ</span> GALAXY</h4>
+                    <p class="text-muted small">Explore the universe of knowledge, one question at a time.</p>
+                </div>
+
+                <div class="col-md-4 mb-3 text-md-center">
+                    <div class="contact-item">
+                        <span>📧</span> support@quizgalaxy.com
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span> +36 70 296 68 33
                     </div>
                 </div>
-            </footer>
+
+                <div class="col-md-4 mb-3 text-md-end">
+                    <div class="social-links mb-3">
+                        <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="footer-icon-link mx-2"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <p class="mb-0 text-muted small">&copy; 2026 Quiz Galaxy Inc. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
+    </footer>
 
     </div>
 

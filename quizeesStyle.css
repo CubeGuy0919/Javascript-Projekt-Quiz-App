@@ -337,6 +337,102 @@ body {
     padding-right: 5px;
 }
 
+/* GLOBAL LEADERBOARDS */
+.global-leaderboard-wrapper {
+    background: rgba(22, 33, 62, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 77, 141, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.leaderboard-title {
+    font-family: 'Black Ops One', system-ui;
+    text-align: center;
+    color: #ff4d8d;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff4d8d;
+}
+
+.category-leaderboard-column {
+    background: rgba(15, 52, 96, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.category-leaderboard-column h4 {
+    font-size: 1rem;
+    color: #00d4ff;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.mini-score-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Table Headers for the Mini Leaderboards */
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    padding: 0 5px 5px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+}
+
+/* Individual Row Alignment */
+.mini-score-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.rank-badge {
+    color: #ff4d8d;
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+}
+
+.mini-name {
+    color: #fff;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mini-pts {
+    color: #4dfd63;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mini-time {
+    color: #00d4ff;
+    font-size: 0.8rem;
+    text-align: right;
+    font-family: 'monospace';
+}
+
+/* Highlight for the Winner */
+.mini-score-item:first-child {
+    background: rgba(233, 69, 96, 0.1);
+    border-radius: 5px;
+}
+
 /* RESPONSIVE MEDIA QUERIES */
 /* Turns on when the screen is smaller than 768px */
 @media (max-width: 768px) {
