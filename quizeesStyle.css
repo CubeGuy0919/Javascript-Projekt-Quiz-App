@@ -3,6 +3,16 @@ body {
     background: radial-gradient(circle, #1a1a2e 0%, #0f0f1a 100%);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+/* Full screen height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Utility */
@@ -16,18 +26,36 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Full screen height & Sticky Footer Setup */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, #1a1a2e 0%, #0f0f1a 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* This makes the body a flex container */
+    display: flex;
+    flex-direction: column;
+}
+
 #container {
     background: rgba(118, 83, 204, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    margin: 0 auto;
-    width: 95%; /* Default for mobile */
+    width: 95%; 
     max-width: 1200px; 
+    margin: 0 auto;
     padding: 0;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5);
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
+
+    flex: 1 0 auto; 
 }
 
 #container h2 {
@@ -89,6 +117,11 @@ h1 {
     align-items: center;
 }
 
+/* Timeline effect */
+.category-wrapper:nth-child(3) .category-grid {
+    border-left: 3px dashed #ff4d8d;
+}
+
 /* TOPICS TITLES */
 .foe-square {
     background-color: #e94560;
@@ -135,7 +168,7 @@ h1 {
     width: 100%;
 }
 
-.logo-text {
+.logo-text-header {
     color: #ffffff;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -146,13 +179,13 @@ h1 {
     text-shadow: 0 0 15px rgba(162, 89, 255, 0.6);
 }
 
-.accent {
+.accentHeader {
     color: #ff4d8d;
     text-shadow: 0 0 20px rgba(255, 77, 141, 0.8);
     position: relative;
 }
 
-.logo-text::after {
+.logo-text-header::after {
     content: '';
     display: block;
     position: relative;
@@ -182,11 +215,99 @@ h1 {
     text-align: center;
 } */
 
+/* QUIZ FOOTER */
+.quiz-footer {
+    background: rgba(20, 10, 30, 0.8); 
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 0, 102, 0.3);
+    color: white;
+    width: 100%;
+    
+    margin-top: auto; 
+    flex-shrink: 0;
+}
+
+.quiz-footer p{
+    color: white !important;
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.contact-item {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-link {
+    color: #ff0066; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff0066;
+}
+
+.accentFooter{
+    color: #ff4d8d;
+    text-shadow: 0 0 20px rgba(255, 77, 141, 0.8);
+    position: relative;
+}
+
+.logo-text-footer {
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(162, 89, 255, 0.6);
+}
+
+.logo-text-footer::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50px;
+    width: 120px;
+    height: 3px;
+    background: #ff4d8d;
+    margin: 5px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff4d8d;
+}
+
+/* QUIZ FOOTER IMAGES */
+.footer-icon-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem; 
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-icon-link:hover {
+    color: #ff0066; 
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 8px #ff0066);
+}
+
+.contact-item span {
+    margin-right: 8px;
+    color: #ff0066;
+}
+
 /* CATEGORIES TITLE */
 .quiz-categories-title {
     display: inline-block;
     padding: 10px 35px;
-    margin: 20px auto 40px auto;
+    margin: 50px auto 40px auto;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
