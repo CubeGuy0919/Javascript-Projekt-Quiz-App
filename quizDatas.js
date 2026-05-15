@@ -219,5 +219,22 @@ const quizData = {
         { q: "The 'Statue of David' was sculpted by which artist?", a: ["Bernini", "Donatello", "Michelangelo", "Canova"], correct: "Michelangelo" },
         { q: "In which city is the Louvre Museum located?", a: ["London", "Rome", "Paris", "Berlin"], correct: "Paris" },
         { q: "Which art style is characterized by geometric shapes and multiple viewpoints?", a: ["Abstract Expressionism", "Cubism", "Surrealism", "Realism"], correct: "Cubism" }
+    ],
+    "Singers": [
+        { q: "What is the name of this singer?", a: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"], correct: "Leonardo da Vinci" },
+        { q: "What is the name of this singer?", a: ["Salvador Dalí", "Vincent van Gogh", "Andy Warhol", "Johannes Vermeer"], correct: "Vincent van Gogh" },
+        { q: "What is the name of this singer?", a: ["Surrealism", "Cubism", "Impressionism", "Pop Art"], correct: "Surrealism" },
+        { q: "What is the name of this singer?", a: ["Raphael", "Donatello", "Michelangelo", "Leonardo da Vinci"], correct: "Michelangelo" },
+        { q: "What is the name of this singer?", a: ["Jackson Pollock", "Andy Warhol", "Roy Lichtenstein", "Keith Haring"], correct: "Andy Warhol" },
+        { q: "What is the name of this singer?", a: ["The Starry Night", "The Scream", "The Last Supper", "Guernica"], correct: "The Scream" },
+        { q: "What is the name of this singer?", a: ["Jean-Michel Basquiat", "Banksy", "KAWS", "Shepard Fairey"], correct: "Banksy" },
+        { q: "What is the name of this singer?", a: ["Spain", "Mexico", "Argentina", "Colombia"], correct: "Mexico" },
+        { q: "What is the name of this singer?", a: ["The Milkmaid", "Girl with a Pearl Earring", "The Night Watch", "The Kiss"], correct: "Girl with a Pearl Earring" },
+        { q: "What is the name of this singer?", a: ["Cubism", "Pointillism", "Dadaism", "Fauvism"], correct: "Pointillism" },
+        { q: "What is the name of this singer?", a: ["Paul Cézanne", "Vincent van Gogh", "Edgar Degas", "Henri Matisse"], correct: "Vincent van Gogh" },
+        { q: "What is the name of this singer?", a: ["Jackson Pollock", "Mark Rothko", "Willem de Kooning", "Georgia O'Keeffe"], correct: "Jackson Pollock" },
+        { q: "What is the name of this singer?", a: ["Bernini", "Donatello", "Michelangelo", "Canova"], correct: "Michelangelo" },
+        { q: "What is the name of this singer?", a: ["London", "Rome", "Paris", "Berlin"], correct: "Paris" },
+        { q: "What is the name of this singer?", a: ["Abstract Expressionism", "Cubism", "Surrealism", "Realism"], correct: "Cubism" }
     ]
 };
