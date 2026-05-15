@@ -221,20 +221,38 @@ const quizData = {
         { q: "Which art style is characterized by geometric shapes and multiple viewpoints?", a: ["Abstract Expressionism", "Cubism", "Surrealism", "Realism"], correct: "Cubism" }
     ],
     "Singers": [
-        { q: "What is the name of this singer?", a: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"], correct: "Leonardo da Vinci" },
-        { q: "What is the name of this singer?", a: ["Salvador Dalí", "Vincent van Gogh", "Andy Warhol", "Johannes Vermeer"], correct: "Vincent van Gogh" },
-        { q: "What is the name of this singer?", a: ["Surrealism", "Cubism", "Impressionism", "Pop Art"], correct: "Surrealism" },
-        { q: "What is the name of this singer?", a: ["Raphael", "Donatello", "Michelangelo", "Leonardo da Vinci"], correct: "Michelangelo" },
-        { q: "What is the name of this singer?", a: ["Jackson Pollock", "Andy Warhol", "Roy Lichtenstein", "Keith Haring"], correct: "Andy Warhol" },
-        { q: "What is the name of this singer?", a: ["The Starry Night", "The Scream", "The Last Supper", "Guernica"], correct: "The Scream" },
-        { q: "What is the name of this singer?", a: ["Jean-Michel Basquiat", "Banksy", "KAWS", "Shepard Fairey"], correct: "Banksy" },
-        { q: "What is the name of this singer?", a: ["Spain", "Mexico", "Argentina", "Colombia"], correct: "Mexico" },
-        { q: "What is the name of this singer?", a: ["The Milkmaid", "Girl with a Pearl Earring", "The Night Watch", "The Kiss"], correct: "Girl with a Pearl Earring" },
-        { q: "What is the name of this singer?", a: ["Cubism", "Pointillism", "Dadaism", "Fauvism"], correct: "Pointillism" },
-        { q: "What is the name of this singer?", a: ["Paul Cézanne", "Vincent van Gogh", "Edgar Degas", "Henri Matisse"], correct: "Vincent van Gogh" },
-        { q: "What is the name of this singer?", a: ["Jackson Pollock", "Mark Rothko", "Willem de Kooning", "Georgia O'Keeffe"], correct: "Jackson Pollock" },
-        { q: "What is the name of this singer?", a: ["Bernini", "Donatello", "Michelangelo", "Canova"], correct: "Michelangelo" },
-        { q: "What is the name of this singer?", a: ["London", "Rome", "Paris", "Berlin"], correct: "Paris" },
-        { q: "What is the name of this singer?", a: ["Abstract Expressionism", "Cubism", "Surrealism", "Realism"], correct: "Cubism" }
-    ]
+    { q: "Which singer is known as the 'King of Pop'?", a: ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"], correct: "Michael Jackson" },
+    { q: "Which singer is famous for the song 'Shape of You'?", a: ["Ed Sheeran", "Justin Bieber", "Shawn Mendes", "Harry Styles"], correct: "Ed Sheeran" },
+    { q: "Which artist is known for wearing meat dresses and extravagant outfits?", a: ["Madonna", "Lady Gaga", "Rihanna", "Beyoncé"], correct: "Lady Gaga" },
+    { q: "Freddie Mercury was the lead singer of which band?", a: ["The Beatles", "Queen", "Nirvana", "Coldplay"], correct: "Queen" },
+    { q: "Which singer is famous for the album '1989'?", a: ["Ariana Grande", "Taylor Swift", "Dua Lipa", "Katy Perry"], correct: "Taylor Swift" },
+    { q: "Which singer is known for the hit song 'Rolling in the Deep'?", a: ["Adele", "Sia", "P!nk", "Lorde"], correct: "Adele" },
+    { q: "Which artist is often called the 'Queen of Pop'?", a: ["Madonna", "Cher", "Britney Spears", "Celine Dion"], correct: "Madonna" },
+    { q: "Which singer became famous with the song 'Baby'?", a: ["Justin Timberlake", "Justin Bieber", "The Weeknd", "Bruno Mars"], correct: "Justin Bieber" },
+    { q: "Which singer is known for the album 'Future Nostalgia'?", a: ["Doja Cat", "Dua Lipa", "Billie Eilish", "Olivia Rodrigo"], correct: "Dua Lipa" },
+    { q: "Which artist is famous for the song 'Blinding Lights'?", a: ["Drake", "Post Malone", "The Weeknd", "Travis Scott"], correct: "The Weeknd" },
+    { q: "Which singer is recognized for her green and black fashion style?", a: ["Billie Eilish", "Selena Gomez", "Camila Cabello", "Halsey"], correct: "Billie Eilish" },
+    { q: "Which singer performed 'Someone Like You'?", a: ["Adele", "Sam Smith", "Jessie J", "Kelly Clarkson"], correct: "Adele" },
+    { q: "Which artist is known as the 'Rocket Man' singer?", a: ["David Bowie", "Elton John", "Phil Collins", "George Michael"], correct: "Elton John" },
+    { q: "Which singer is famous for the hit 'Bad Guy'?", a: ["Olivia Rodrigo", "Billie Eilish", "Demi Lovato", "Sabrina Carpenter"], correct: "Billie Eilish" },
+    { q: "Which artist is known for his signature moonwalk dance?", a: ["Usher", "Chris Brown", "Michael Jackson", "Bruno Mars"], correct: "Michael Jackson" }
+    ],
+
+    "Instruments": [
+    { q: "Which instrument has 88 keys and is commonly used in classical music?", a: ["Violin", "Piano", "Flute", "Trumpet"], correct: "Piano" },
+    { q: "Which instrument is known for having six strings and being used in rock music?", a: ["Drums", "Guitar", "Cello", "Clarinet"], correct: "Guitar" },
+    { q: "Which instrument is played with a bow and is the smallest in the string family?", a: ["Viola", "Cello", "Violin", "Harp"], correct: "Violin" },
+    { q: "Which percussion instrument consists of cymbals, toms, and a snare?", a: ["Xylophone", "Drum Kit", "Tambourine", "Bongo"], correct: "Drum Kit" },
+    { q: "Which wind instrument is commonly associated with jazz and made of brass?", a: ["Saxophone", "Oboe", "Recorder", "Bassoon"], correct: "Saxophone" },
+    { q: "Which instrument has black and white keys but produces sound using pipes?", a: ["Accordion", "Organ", "Keyboard", "Harpsichord"], correct: "Organ" },
+    { q: "Which brass instrument is famous for its long slide?", a: ["Trumpet", "Tuba", "French Horn", "Trombone"], correct: "Trombone" },
+    { q: "Which instrument is traditionally associated with Scottish music?", a: ["Banjo", "Bagpipes", "Mandolin", "Ukulele"], correct: "Bagpipes" },
+    { q: "Which small string instrument is strongly associated with Hawaiian music?", a: ["Lute", "Ukulele", "Cello", "Bass Guitar"], correct: "Ukulele" },
+    { q: "Which instrument is played by blowing across a mouthpiece and is often silver-colored?", a: ["Clarinet", "Flute", "Trombone", "Tuba"], correct: "Flute" },
+    { q: "Which large string instrument is usually played while sitting and placed between the knees?", a: ["Violin", "Cello", "Harp", "Banjo"], correct: "Cello" },
+    { q: "Which keyboard instrument is electronic and commonly used in pop music?", a: ["Accordion", "Synthesizer", "Xylophone", "Harp"], correct: "Synthesizer" },
+    { q: "Which instrument is known for its deep sound and is the largest brass instrument?", a: ["Trumpet", "French Horn", "Tuba", "Trombone"], correct: "Tuba" },
+    { q: "Which percussion instrument is made of wooden bars that are struck with mallets?", a: ["Triangle", "Xylophone", "Drum", "Maracas"], correct: "Xylophone" },
+    { q: "Which instrument is commonly used in country music and has five strings?", a: ["Mandolin", "Banjo", "Ukulele", "Cello"], correct: "Banjo" }
+]
 };

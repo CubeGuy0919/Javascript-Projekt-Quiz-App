@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "MARVEL JESUS", score: 15, time: "44.4", date: "2026.05.14" },
                 { name: "SPOODER-MAN", score: 14, time: "51.2", date: "2026.05.14" },
                 { name: "I AM...", score: 14, time: "53.2", date: "2026.05.14" },
+
             ],
             "DC": [
                 { name: "BATMAAAAN", score: 15, time: "46.1", date: "2026.05.14" },
                 { name: "ULTRA_MAN", score: 9, time: "51.4", date: "2026.05.14" }
             ],
             "History": [
-                { name: "Adolf...", score: 15, time: "46.6", date: "2026.05.14" }
+                { name: "Adolf...", score: 15, time: "66.6", date: "2026.05.14" }
             ]
         };
         localStorage.setItem('galaxyLeaderboards', JSON.stringify(dummyData));
