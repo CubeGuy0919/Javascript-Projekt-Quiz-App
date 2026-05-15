@@ -97,6 +97,7 @@ body {
     justify-content: center;
     gap: 15px;              
     text-align: left;
+    padding-top: 20px !important;
 }
 
 .categories {
